@@ -17,7 +17,7 @@ Aplicación web que mejora la conexión a internet durante conciertos al detecta
   - `style.css` - Estilos CSS para la interfaz de usuario
   - `main.js` - Punto de entrada de la aplicación
   - `app.js` - Archivo principal con la lógica de inicialización
-  - `api/` - Directorio con módulos para las APIs
+  - `api/` - Directorio con módulos para las llamadas a las APIs
     - `device-location-verification-api.js` - API para verificar la ubicación del usuario
     - `quality-on-demand-api.js` - API para mejorar la calidad de conexión
   - `utils/` - Directorio con utilidades
@@ -35,7 +35,7 @@ Aplicación web que mejora la conexión a internet durante conciertos al detecta
    ```
 3. Inicia el servidor de desarrollo:
    ```
-   npm run dev
+   npx vite
    ```
 4. Abre tu navegador en `http://localhost:3000`
 
@@ -49,24 +49,11 @@ npm run build
 
 Esto generará una carpeta `dist` con los archivos optimizados.
 
-## Despliegue en Vercel
-
-Para desplegar esta aplicación en Vercel, sigue estos pasos:
-
-1. Asegúrate de tener una cuenta en [Vercel](https://vercel.com)
-2. Conecta tu repositorio de GitHub a Vercel:
-   - Ve a [vercel.com/new](https://vercel.com/new)
-   - Importa tu repositorio de GitHub
-   - Vercel detectará automáticamente que es un proyecto de Vite
-   - Haz clic en "Deploy"
-
-La aplicación está configurada con `vercel.json` para un despliegue óptimo en la plataforma.
-
 ## APIs Simuladas
 
 ### Device Location Verification API
 
-En esta versión de demostración, la API simula un 99% de probabilidad de que el usuario esté en el concierto. En una implementación real, utilizaría la API de Geolocalización del navegador y la compararía con las coordenadas del concierto.
+En esta versión de demostración, la API simula un 70% de probabilidad de que el usuario esté en el concierto. En una implementación real, utilizaría la API de Geolocalización y la compararía con las coordenadas del concierto.
 
 ### Quality on Demand API (QoD)
 
@@ -77,10 +64,8 @@ Esta API simula la activación de una conexión mejorada cuando el usuario está
 - Integración con la Device Location Verification API real
 - Conexión con la Quality on Demand API real
 - Autenticación de usuarios
-- Posibilidad de seleccionar entre diferentes eventos
 - Estadísticas de uso y calidad de conexión
 
 ## Autor
 
-Telefónica - Fast Connect Team
-
+Líderes dig
