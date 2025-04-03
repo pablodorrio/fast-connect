@@ -1,9 +1,4 @@
-import dotenv from "dotenv";
-import fs from "fs";
-import path from "path";
 import { defineConfig } from "vite";
-
-dotenv.config();
 
 export default defineConfig({
   base: './',
