@@ -12,11 +12,11 @@ const concertLocation = {
 function checkUserLocation() {
     return new Promise((resolve, reject) => {
         if (navigator.geolocation) {
-            // Simulación: 99% de probabilidad de estar en el concierto
+            // Simulación: 70% de probabilidad de estar en el concierto
             const randomResult = Math.random();
             
             setTimeout(() => {
-                if (randomResult < 0.99) {
+                if (randomResult < 0.70) {
                     resolve({
                         success: true,
                         message: 'Usuario localizado en el concierto',
