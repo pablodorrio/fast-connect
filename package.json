@@ -1,17 +1,21 @@
 {
-  "name": "demo",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "fast-connect",
+  "version": "1.0.0",
+  "description": "Aplicación web para mejorar la conexión en enventos",
+  "main": "index.html",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "serve .",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "telefonica",
+    "eventos",
+    "conectividad"
+  ],
+  "author": "Líderes digitales",
+  "license": "ISC",
+  "dependencies": {},
   "devDependencies": {
-    "vite": "^6.0.5"
-  },
-  "dependencies": {
-    "dotenv": "^16.4.7"
+    "serve": "^14.0.0"
   }
 }
