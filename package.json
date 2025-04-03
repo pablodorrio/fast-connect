@@ -1,11 +1,13 @@
 {
   "name": "fast-connect",
+  "private": true,
   "version": "1.0.0",
-  "description": "Aplicación web para mejorar la conexión en enventos",
-  "main": "index.html",
+  "type": "module",
+  "description": "Aplicación web para mejorar la conexión en eventos",
   "scripts": {
-    "dev": "serve .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "keywords": [
     "telefonica",
@@ -16,6 +18,6 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "serve": "^14.0.0"
+    "vite": "^5.0.0"
   }
 }

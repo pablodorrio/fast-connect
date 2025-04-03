@@ -5,22 +5,18 @@ import { defineConfig } from "vite";
 
 dotenv.config();
 
-export default defineConfig(({ mode }) => {
-  const isDev = mode === "development";
-  let serverConfig;
-
-  if (isDev) {
-    serverConfig = {
-      https: {
-        key: fs.readFileSync(path.resolve(__dirname, process.env.VITE_KEY_PATH)),
-        cert: fs.readFileSync(path.resolve(__dirname, process.env.VITE_CERT_PATH)),
-      },
-      host: process.env.VITE_HOST,
-      port: Number(process.env.VITE_PORT),
-    };
+export default defineConfig({
+  base: './',
+  
+  server: {
+    port: 3000,
+    open: true
+  },
+  
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    emptyOutDir: true,
+    sourcemap: true
   }
-
-  return {
-    server: isDev ? serverConfig : undefined,
-  };
 });
