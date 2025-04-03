@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Connect para Conciertos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Fast Connect</h1>
+            <p>Mejora tu conexión en conciertos</p>
+        </header>
+        
+        <main>
+            <div class="connection-status">
+                <div id="status-icon" class="status-icon offline"></div>
+                <p id="status-message">No conectado</p>
+            </div>
+            
+            <div class="action-area">
+                <button id="connect-button" class="primary-button">
+                    Conectar al concierto
+                </button>
+                <div id="loading-spinner" class="spinner hidden"></div>
+            </div>
+            
+            <div class="info-panel">
+                <div id="location-status" class="info-item">
+                    <span class="info-label">Ubicación:</span>
+                    <span id="location-value">Desconocida</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Calidad de conexión:</span>
+                    <span id="qod-value">Estándar</span>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>© 2023 Fast Connect - Telefónica</p>
+        </footer>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html> 
